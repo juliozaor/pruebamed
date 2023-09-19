@@ -1,0 +1,78 @@
+#botones {
+  display: none;
+}
+
+#msg {
+  visibility: hidden;
+  color: red;
+  font-weight: bold;
+  font-size: 22px;
+  font-family: Verdana;
+}
+button {
+  padding: 5px 10px;
+  border: 1px solid grey;
+  font-size: 18px;
+  background: white;
+}
+
+/* .audio-controls {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  justify-content: center;
+} */
+/* .audio-controls button {
+  margin: 0px 5px;
+} */
+canvas {
+  background-color: black;
+}
+
+a {
+  margin-left: 20px;
+}
+.app {
+  padding-top: 20px;
+}
+.contenedor{
+  display :flex ;
+  justify-content: center;
+}
+.filas{
+  display :flex ;
+  justify-content: center;
+}
+.filas select{
+  margin: 0 10px;
+}
+
+.filas button{
+  margin: 20px 10px;
+}
+
+.contenido{
+  display: flex;
+}
+
+.videoContenedor{
+  width:250px;
+  height:300px;
+  margin: 0 10px;
+}
+
+.ondas{
+  margin: 0 10px;
+}
+
+.respuestas{
+  width: 400px;
+}
+
+.respuestas .paciente{
+  margin: 0 0 20px 10px;
+}
+
+.respuestas .medico{
+  margin: 20px 0 0 10px;
+}

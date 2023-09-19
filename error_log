@@ -1,0 +1,1 @@
+[31-Aug-2023 19:25:36 America/Boise] PHP Warning:  curl_close() expects parameter 1 to be resource, null given in /home3/tysaco/public_html/alcaldiawilson/pruebamed/openAI.php on line 44
