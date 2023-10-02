@@ -76,3 +76,7 @@ a {
 .respuestas .medico{
   margin: 20px 0 0 10px;
 }
+
+.grabando{
+  display:none;
+}

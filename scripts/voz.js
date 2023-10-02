@@ -430,7 +430,6 @@ function llamarFuncionEnPHP(nombreArchivo) {
 }
 
 function enviarChatGpt(texto) {
-  // const texto = document.getElementById('texto').value;
   if (texto !== '') {
     const contexto = {
       "model": "gpt-3.5-turbo",
