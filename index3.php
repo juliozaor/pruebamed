@@ -11,13 +11,20 @@
 </head>
 
 <body>
+  <div class="m-2">
+    <h1>Historia clinica morbilidad</h1>
+    <p>Para iniciar la grabación haga cick en 'Comenzar' y luego diga el nombre del campo que desea llenar. <br>
+    Si el campo tiene texto entre parentesis, ese es el que se debe mencionar. <br>
+    los campos se iran lleando despues que mencione el nobre</p>
+  </div>
 
   <div class="m-2">
     <button class="btn btn-success" id="btnStart">COMENZAR</button>
     <button class="btn btn-danger" id="btnStop">DETENER</button>
-    <br>
-     <span class="grabando" id="grabando"> <strong>Grabando ....</strong> <br>
-     <small> para terminar, diga la palabra 'finalizar' o haga clic en el boton detener</small></span>
+    <p><span class="grabando" id="grabando"> <strong>Grabando ....</strong> <br>
+     
+     <small> para terminar, diga la palabra 'finalizar' o haga clic en el boton detener</small></span></p>
+     
   </div>
   <div class="m-4">
     <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -27,9 +34,9 @@
       <li class="nav-item" role="presentation">
         <button class="nav-link" id="revisionporsistema-tab" data-bs-toggle="tab" data-bs-target="#revisionporsistema" type="button" role="tab" aria-controls="revisionporsistema" aria-selected="true">EXAMEN FISICO</button>
       </li>
-      <li class="nav-item" role="presentation">
+      <!-- <li class="nav-item" role="presentation">
         <button class="nav-link" id="examenfisico-tab" data-bs-toggle="tab" data-bs-target="#examenfisico" type="button" role="tab" aria-controls="examenfisico" aria-selected="false">Profile</button>
-      </li>
+      </li> -->
     </ul>
     <div class="tab-content" id="myTabContent">
     <div class="tab-pane fade show active" id="anamnesis" role="tabpanel" aria-labelledby="anamnesis-tab">

@@ -23,10 +23,10 @@ btnStop.addEventListener('click', () => {
 
 recognition.onresult = (event) => {
     const texto = event.results[event.results.length - 1][0].transcript;
-  //  textArea.value = texto;
-  procesarTexto(texto);
- //leerTexto(texto)
-   
+    //  textArea.value = texto;
+    procesarTexto(texto);
+    //leerTexto(texto)
+
 }
 
 /* function leerTexto(text) {
@@ -46,49 +46,49 @@ recognition.onresult = (event) => {
 function enviarChatGpt(texto, campo) {
     console.log("entro 3", texto, campo);
     if (texto !== '') {
-      const contexto = {
-        "model": "gpt-3.5-turbo",
-        "messages": [
-          { "role": "system", "content": "Eres un experto en terminologia medica usando la semiología de suros" },
-          { "role": "user", "content": `por favor traduce los síntomas que te paso a continuación usando terminología medica y semiología de suros, solo retorna el diagnostico sin encabezado y redactando el texto continuo: ${texto}` }],
-        "temperature": 0.7
-      };
-  
-      fetch(urlChatGpt, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': 'Bearer ' + tokenChatGpt
-        },
-        body: JSON.stringify(contexto)
-      })
-        .then(function (response) {
-  
-          if (!response.ok) {
-            throw new Error('La respuesta de la API no fue correcta');
-          }
-          return response.json();
+        const contexto = {
+            "model": "gpt-3.5-turbo",
+            "messages": [
+                { "role": "system", "content": "Eres un experto en terminologia medica usando la semiología de suros" },
+                { "role": "user", "content": `por favor traduce los síntomas que te paso a continuación usando terminología medica y semiología de suros, solo retorna el diagnostico sin encabezado y redactando el texto continuo: ${texto}` }],
+            "temperature": 0.7
+        };
+
+        fetch(urlChatGpt, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer ' + tokenChatGpt
+            },
+            body: JSON.stringify(contexto)
         })
-        .then(function (data) {
-          // Procesar los datos de respuesta de la API aquí
-  
-          if (!data.choices[0]) {
-            throw new Error('La respuesta de la API no fue correcta');
-  
-          }
-          const respuesta = data.choices[0].message.content;
-          console.log(respuesta);
-          const responder2 = document.getElementById(campo);
-          responder2.value = respuesta; // respuesta chatGpt
-        })
-        .catch(function (error) {
-          // Manejar errores de la llamada a la API aquí
-          console.log('Error:', error.message);
-          // Puedes intentar la llamada nuevamente en este punto
-          setTimeout(function () {
-            enviar();
-          }, 1000);
-        });
-  
+            .then(function (response) {
+
+                if (!response.ok) {
+                    throw new Error('La respuesta de la API no fue correcta');
+                }
+                return response.json();
+            })
+            .then(function (data) {
+                // Procesar los datos de respuesta de la API aquí
+
+                if (!data.choices[0]) {
+                    throw new Error('La respuesta de la API no fue correcta');
+
+                }
+                const respuesta = data.choices[0].message.content;
+                console.log(respuesta);
+                const responder2 = document.getElementById(campo);
+                responder2.value = respuesta; // respuesta chatGpt
+            })
+            .catch(function (error) {
+                // Manejar errores de la llamada a la API aquí
+                console.log('Error:', error.message);
+                // Puedes intentar la llamada nuevamente en este punto
+                setTimeout(function () {
+                    enviar();
+                }, 1000);
+            });
+
     }
-  }
+}
