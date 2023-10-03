@@ -80,3 +80,9 @@ a {
 .grabando{
   display:none;
 }
+.resaltar{
+  background-color: rgb(167, 255, 226)!important;
+  -webkit-box-shadow: 6px 6px 17px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 6px 17px -6px rgba(0,0,0,0.75);
+    box-shadow: 6px 6px 17px -6px rgba(0,0,0,0.75);
+}

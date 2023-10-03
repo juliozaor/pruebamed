@@ -1,5 +1,5 @@
 const urlChatGpt = 'https://api.openai.com/v1/chat/completions';
-const tokenChatGpt = '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';
+const tokenChatGpt = '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';
 
 const btnStart = document.getElementById('btnStart');
 const btnStop = document.getElementById('btnStop');
@@ -50,7 +50,7 @@ function enviarChatGpt(texto, campo) {
             "model": "gpt-3.5-turbo",
             "messages": [
                 { "role": "system", "content": "Eres un experto en terminologia medica usando la semiología de suros" },
-                { "role": "user", "content": `por favor traduce los síntomas que te paso a continuación usando terminología medica y semiología de suros, solo retorna el diagnostico sin encabezado y redactando el texto continuo: ${texto}` }],
+                { "role": "user", "content": `por favor traduce los síntomas que te paso a continuación usando terminología medica y semiología de suros, solo retorna el diagnostico sin encabezado y redactando el texto continuo sin expliación: ${texto}` }],
             "temperature": 0.7
         };
 

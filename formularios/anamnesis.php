@@ -6,7 +6,7 @@
 
   <div class="form-floating ms-2 w-50">
     <textarea class="form-control m-2" placeholder="Leave a comment here" id="motivoConsultaTranscripcion" style="height: 100px"></textarea>
-    <label for="motivoConsultaTranscripcion">TRANSCRIPCIÓN SINTOMATOLOGIA (Procesa motivo)</label>
+    <label for="motivoConsultaTranscripcion">TRANSCRIPCIÓN (Procesa motivo)</label>
   </div>
 
 </div>
@@ -18,7 +18,7 @@
 
 <div class="form-floating ms-2 w-50">
   <textarea class="form-control m-2" placeholder="Leave a comment here" id="enfermedadActualTranscipcion" style="height: 100px"></textarea>
-  <label for="enfermedadActualTranscipcion">TRANSCRIPCIÓN SINTOMATOLOGIA (procesa enfermedad)</label>
+  <label for="enfermedadActualTranscipcion">TRANSCRIPCIÓN (procesa enfermedad)</label>
 </div>
 
 </div>
