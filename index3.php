@@ -34,9 +34,9 @@
       <li class="nav-item" role="presentation">
         <button class="nav-link" id="revisionporsistema-tab" data-bs-toggle="tab" data-bs-target="#revisionporsistema" type="button" role="tab" aria-controls="revisionporsistema" aria-selected="true">EXAMEN FISICO</button>
       </li>
-      <!-- <li class="nav-item" role="presentation">
-        <button class="nav-link" id="examenfisico-tab" data-bs-toggle="tab" data-bs-target="#examenfisico" type="button" role="tab" aria-controls="examenfisico" aria-selected="false">Profile</button>
-      </li> -->
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="antecedentesGinecoObstetricos-tab" data-bs-toggle="tab" data-bs-target="#antecedentesGinecoObstetricos" type="button" role="tab" aria-controls="antecedentesGinecoObstetricos" aria-selected="false">ANTECEDENTES GINECO - OBSTETRICOS</button>
+      </li>
     </ul>
     <div class="tab-content" id="myTabContent">
     <div class="tab-pane fade show active" id="anamnesis" role="tabpanel" aria-labelledby="anamnesis-tab">
@@ -47,7 +47,9 @@
       <?php include 'formularios/signosVitales.php'; ?>
 
       </div>
-      <div class="tab-pane fade" id="examenfisico" role="tabpanel" aria-labelledby="examenfisico-tab">...</div>
+      <div class="tab-pane fade" id="antecedentesGinecoObstetricos" role="tabpanel" aria-labelledby="antecedentesGinecoObstetricos-tab">
+      <?php include 'formularios/antecedentesGinecoObstetricos.php'; ?>
+      </div>
 
     </div>
   </div>
