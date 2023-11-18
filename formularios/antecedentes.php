@@ -8,7 +8,7 @@
 
     <div class="form-floating ms-2 w-50">
 <textarea class="form-control m-2" placeholder="Leave a comment here" id="patologicosTranscripcion"style="height: 100px"></textarea>
-    <label for="patologicosTranscripcion">SINTOMATOLOGIA (Procesa patologicos)</label>
+    <label for="patologicosTranscripcion">SINTOMATOLOGIA</label>
     </div>
     
 
@@ -22,7 +22,7 @@
 
         <div class="form-floating ms-2 w-50">
 <textarea class="form-control m-2" placeholder="Leave a comment here" id="traumaticosTranscripcion"style="height: 100px"></textarea>
-    <label for="traumaticosTranscripcion">SINTOMATOLOGIA (Procesa traumaticos)</label>
+    <label for="traumaticosTranscripcion">SINTOMATOLOGIA</label>
     </div>
     
 
@@ -36,7 +36,7 @@
 
         <div class="form-floating ms-2 w-50">
 <textarea class="form-control m-2" placeholder="Leave a comment here" id="quirurgicosTranscripcion"style="height: 100px"></textarea>
-    <label for="quirurgicosTranscripcion">SINTOMATOLOGIA (Procesa quirurgicos)</label>
+    <label for="quirurgicosTranscripcion">SINTOMATOLOGIA</label>
     </div>
     
 
@@ -50,7 +50,7 @@
 
         <div class="form-floating ms-2 w-50">
 <textarea class="form-control m-2" placeholder="Leave a comment here" id="alergicosTranscripcion"style="height: 100px"></textarea>
-    <label for="alergicosTranscripcion">SINTOMATOLOGIA (Procesa alergicos)</label>
+    <label for="alergicosTranscripcion">SINTOMATOLOGIA</label>
     </div>
     
 
@@ -64,13 +64,13 @@
 
         <div class="form-floating ms-2 w-50">
 <textarea class="form-control m-2" placeholder="Leave a comment here" id="toxicologicosTranscripcion"style="height: 100px"></textarea>
-    <label for="toxicologicosTranscripcion">SINTOMATOLOGIA (Procesa toxicologicos)</label>
+    <label for="toxicologicosTranscripcion">SINTOMATOLOGIA</label>
     </div>
     
 
     </div>
 
-    <div class="d-flex">
+<!--     <div class="d-flex">
     <div class="form-floating ms-2 w-50">
 <textarea class="form-control m-2" placeholder="Leave a comment here" id="farmacologicos"style="height: 100px"></textarea>
     <label for="farmacologicos">FARMACOLOGICOS</label>
@@ -111,7 +111,7 @@
     </div>
     
 
-    </div>
+    </div> -->
 
 
 

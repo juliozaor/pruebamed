@@ -3,7 +3,7 @@
 function enviar($nombreArchivo) {
     $filePath = 'audio/'.$nombreArchivo;
     $urlChatGpt = 'https://api.openai.com/v1/audio/transcriptions';
-    $tokenChatGpt = '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';
+    $tokenChatGpt = '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';
 
     $data = array(
         'file' => new CURLFile($filePath),
@@ -35,7 +35,7 @@ function enviar($nombreArchivo) {
             $respuesta = $responseData['text'];
             echo $respuesta;
         } else {
-            echo 'La respuesta de la API no fue correcta';
+            echo 'La respuesta de la API no fue correcta 2';
         }
     }
 

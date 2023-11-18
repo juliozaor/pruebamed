@@ -2,79 +2,70 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+
+
 </head>
+<body>
+  <div class="m-2">
+    <h1>Historia clinica morbilidad</h1>
+    <p>Para iniciar la grabación haga cick en 'Comenzar' y luego diga el nombre del campo que desea llenar. <br>
+      Si el campo tiene texto entre parentesis, ese es el que se debe mencionar. <br>
+      los campos se iran lleando despues que mencione el nobre</p>
+  </div>
 
-<body class="contenedor">
-	<div class="app">
-		<div class="filas">
-			<select name="" id="micSelect" class="form-select"></select>
+  <div class="m-2">
+    <button class="btn btn-success" id="btnStart">COMENZAR</button>
+    <button class="btn btn-danger" id="btnStop">DETENER</button>
+    <p><span class="grabando" id="grabando"> <strong>Grabando ....</strong> <br>
 
-			<select id="visSelect" class="form-select">
-				<option value="frequencybars">Bar</option>
-				<option value="sinewave">Wave</option>
-				<option value="circle">Circle</option>
-			</select>
+        <small> para terminar, diga la palabra 'finalizar' o haga clic en el boton detener</small></span></p>
 
-		</div>
+  </div>
+  <div class="m-4">
+  <?php include 'formularios/formularioGeneral.php'; ?>
+    <!-- <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="anamnesis-tab" data-bs-toggle="tab" data-bs-target="#anamnesis" type="button" role="tab" aria-controls="anamnesis" aria-selected="true">ANAMNESIS</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="antecedentes-tab" data-bs-toggle="tab" data-bs-target="#antecedentes" type="button" role="tab" aria-controls="antecedentes" aria-selected="true">ANTECEDENTES</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="revisionporsistema-tab" data-bs-toggle="tab" data-bs-target="#revisionporsistema" type="button" role="tab" aria-controls="revisionporsistema" aria-selected="true">EXAMEN FISICO</button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
 
-		<!-- 	<a id="download" >Descargar</a> -->
+      <div class="tab-pane fade show active" id="anamnesis" role="tabpanel" aria-labelledby="anamnesis-tab">
+        <?php include 'formularios/anamnesis.php'; ?>
+      </div>
 
-		<div class="filas">
-			<div id="botones">
-				<button id="record" class="btn btn-danger">Grabar</button>
-				<button id="stop" class="btn btn-success">Stop</button>
-				<button id="restart" class="btn btn-primary" onclick="reiniciar()">Reiniciar</button>
-			</div>
-			<button id="iniciar" class="btn btn-success" onclick="iniciar()">Iniciar</button>
-			<!-- 	<audio id="audio" controls></audio> -->
-		</div>
+      <div class="tab-pane fade" id="antecedentes" role="tabpanel" aria-labelledby="antecedentes-tab">
+        <?php include 'formularios/antecedentes.php'; ?>
+      </div>
 
-		<div id="msg">Grabando...</div>
-
-		<div class="contenido">
-			<div class="videoContenedor">
-				<video id="video" width="100%" autoplay="autoplay">
-					<source src="video/saludo.mp4" type="video/mp4">
-				</video>
-			</div>
-			<div class="ondas">
-
-				<canvas width="300" height="330"></canvas>
-			</div>
-			<div class="respuestas">
-				<div class="paciente">
-					<label for="respuesta"><strong>Paciente: </strong>Transcripci&oacute;n sintomatologia </label>
-					<textarea class="form-control" id="respuesta" id="respuesta" style="height: 130px"></textarea>
-				</div>
-				<div class="medico">
-
-					<label for="respuestaChatGpt"><strong> Medico: </strong>Transcripci&oacute;n sintomatologia </label>
-					<textarea class="form-control" id="respuestaChatGpt" style="height: 130px"></textarea>
-
-				</div>
-			</div>
-		</div>
+      <div class="tab-pane fade" id="revisionporsistema" role="tabpanel" aria-labelledby="revisionporsistema-tab">
+        <?php include 'formularios/signosVitales.php'; ?>
+      </div> -->
 
 
+    </div>
+  </div>
+  <script src="scripts/audio.js"></script>
+<script src="scripts/procesarAudio.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
 
-	</div>
 
 </body>
-<link rel="stylesheet" href="css/style.css">
-<script src="scripts/voz.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-	integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-</script>
-<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-	integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-</script>
 
 </html>

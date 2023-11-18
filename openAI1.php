@@ -3,7 +3,7 @@
 function enviar() {
     $filePath = 'audio/sintomas.wav';
     $urlChatGpt = 'https://api.openai.com/v1/audio/transcriptions';
-    $tokenChatGpt = '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';
+    $tokenChatGpt = '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';
 
     $data = array(
         'file' => new CURLFile($filePath),
@@ -14,7 +14,7 @@ function enviar() {
         CURLOPT_URL => $urlChatGpt,
         CURLOPT_HTTPHEADER => array(
             'Authorization: Bearer ' . $tokenChatGpt,
-            'Cache-Control: no-cache' // Agrega esta l¨ªnea
+            'Cache-Control: no-cache' // Agrega esta lï¿½ï¿½nea
         ),
         CURLOPT_POSTFIELDS => $data,
         CURLOPT_RETURNTRANSFER => true
@@ -35,7 +35,7 @@ function enviar() {
             $respuesta = $responseData['text'];
             echo $respuesta;
         } else {
-            echo 'La respuesta de la API no fue correcta';
+            echo 'La respuesta de la API no fue correcta 3';
         }
     }
 
@@ -45,5 +45,5 @@ function enviar() {
     }
 }
 
-// Llamada a la funci¨®n
+// Llamada a la funciï¿½ï¿½n
 enviar();

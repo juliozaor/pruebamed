@@ -396,7 +396,7 @@ function downloadBlob(blob) {
 }
 
 const urlChatGpt = 'https://api.openai.com/v1/chat/completions';
-const tokenChatGpt = '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';
+const tokenChatGpt = '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';
 
 
 function llamarFuncionEnPHP(nombreArchivo) {
@@ -435,7 +435,7 @@ function enviarChatGpt(texto) {
       "model": "gpt-3.5-turbo",
       "messages": [
         { "role": "system", "content": "Eres un experto en terminologia medica usando la semiología de suros" },
-        { "role": "user", "content": `por favor traduce los síntomas que te paso a continuación usando terminología medica y semiología de suros, solo retorna el diagnostico sin encabezado y redactando el texto continuo: ${texto}` }],
+        { "role": "user", "content": `por favor traduce los síntomas que te paso a continuación usando terminología medica y semiología de suros, solo retorna el diagnostico sin encabezado y redactando el texto continuo y el texto debe tener a lo sumo 60 caracteres para transcribir en una hitoria clinica: ${texto}` }],
       "temperature": 0.7
     };
 
@@ -450,7 +450,7 @@ function enviarChatGpt(texto) {
       .then(function (response) {
 
         if (!response.ok) {
-          throw new Error('La respuesta de la API no fue correcta');
+          throw new Error('La respuesta de la API no fue correcta 4');
         }
         return response.json();
       })
@@ -458,7 +458,7 @@ function enviarChatGpt(texto) {
         // Procesar los datos de respuesta de la API aquí
 
         if (!data.choices[0]) {
-          throw new Error('La respuesta de la API no fue correcta');
+          throw new Error('La respuesta de la API no fue correcta 5');
 
         }
         const respuesta = data.choices[0].message.content;

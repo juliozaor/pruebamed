@@ -1,5 +1,5 @@
 const urlChatGpt = 'https://api.openai.com/v1/chat/completions';
-const tokenChatGpt = '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';
+const tokenChatGpt = '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';
 
 const btnStart = document.getElementById('btnStart');
 const btnStop = document.getElementById('btnStop');
@@ -44,13 +44,13 @@ recognition.onresult = (event) => {
 
 //Enviar a Chat GPT
 function enviarChatGpt(texto, campo) {
-    console.log("entro 3", texto, campo);
+    console.log("entro a chat", texto, campo);
     if (texto !== '') {
         const contexto = {
             "model": "gpt-3.5-turbo",
             "messages": [
                 { "role": "system", "content": "Eres un experto en terminologia medica usando la semiología de suros" },
-                { "role": "user", "content": `por favor traduce los síntomas que te paso a continuación usando terminología medica y semiología de suros, solo retorna el diagnostico sin encabezado y redactando el texto continuo sin expliación: ${texto}` }],
+                { "role": "user", "content": `por favor traduce los síntomas que te paso a continuación usando terminología medica y semiología de suros, sin encabezado y redactando el texto continuo sin expliación: ${texto}` }],
             "temperature": 0.7
         };
 
@@ -62,10 +62,10 @@ function enviarChatGpt(texto, campo) {
             },
             body: JSON.stringify(contexto)
         })
-            .then(function (response) {
-
+            .then(function (response) {                
+                console.log("entro a validar respuesta", texto, campo);
                 if (!response.ok) {
-                    throw new Error('La respuesta de la API no fue correcta');
+                    throw new Error('La respuesta de la API no fue correcta 0');
                 }
                 return response.json();
             })
@@ -73,7 +73,7 @@ function enviarChatGpt(texto, campo) {
                 // Procesar los datos de respuesta de la API aquí
 
                 if (!data.choices[0]) {
-                    throw new Error('La respuesta de la API no fue correcta');
+                    throw new Error('La respuesta de la API no fue correcta 1');
 
                 }
                 const respuesta = data.choices[0].message.content;
@@ -81,14 +81,6 @@ function enviarChatGpt(texto, campo) {
                 const responder2 = document.getElementById(campo);
                 responder2.value = respuesta; // respuesta chatGpt
             })
-            .catch(function (error) {
-                // Manejar errores de la llamada a la API aquí
-                console.log('Error:', error.message);
-                // Puedes intentar la llamada nuevamente en este punto
-                setTimeout(function () {
-                    enviar();
-                }, 1000);
-            });
 
     }
 }
