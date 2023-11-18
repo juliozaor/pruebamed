@@ -1,7 +1,7 @@
 
 
 const urlChatGpt = 'https://api.openai.com/v1/chat/completions';
-const tokenChatGpt = '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';
+const tokenChatGpt = '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';
 
 const btnStart = document.getElementById('btnStart');
 const btnStop = document.getElementById('btnStop');
@@ -46,15 +46,12 @@ recognition.onresult = (event) => {
 
 //Enviar a Chat GPT
 function enviarChatGpt(texto, campo) {
-    console.log({texto, campo});
     const responder2 = document.getElementById(campo);
     if (texto !== '') {
-        if (texto.includes('no') || texto.includes('no refiere') ) {
+        if (texto.includes('no') || texto.includes('no refiere') || texto.includes('ninguna') || texto.includes('ninguno')) {
             responder2.value = 'NO REFIERE POR DEFECTO';
         } else {
-
-            responder2.value = 'Se envio a Chat';
-          /*   const contexto = {
+            const contexto = {
                 "model": "gpt-3.5-turbo",
                 "messages": [
                     { "role": "system", "content": "Eres un experto en terminologia medica usando la semiología de suros" },
@@ -88,7 +85,14 @@ function enviarChatGpt(texto, campo) {
                     console.log(respuesta);
 
                     responder2.value = respuesta; // respuesta chatGpt
-                }) */
+                })
         }
+    }
+}
+
+function pasarTexto(texto, campo) {
+    const responder2 = document.getElementById(campo);
+    if (texto !== '') {
+        responder2.value = texto;
     }
 }

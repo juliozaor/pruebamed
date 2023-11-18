@@ -235,16 +235,16 @@
   <div class="row">
     <div class="col-3">
       <label for="motivoConsulta">¿*** # HIJOS MUERTOS***?</label>
-      <input type="text" id="ectopicos" class="form-control" placeholder="hijosmuertos" aria-label="hijosmuertos">
+      <input type="text" id="hijosmuertos" class="form-control" placeholder="hijosmuertos" aria-label="hijosmuertos">
     </div>
     <div class="col-3">
       <label for="motivoConsultaTranscripcion">HIJOS MUERTOS</label>
-      <input type="text" id="ehijosmuertosTranscripcion" class="form-control" placeholder="hijosmuertos"
+      <input type="text" id="hijosmuertosTranscripcion" class="form-control" placeholder="hijosmuertos"
         aria-label="hijosmuertos">
     </div>
     <div class="col-6">
       <label for="motivoConsulta">Observaciones</label>
-      <textarea class="form-control" placeholder="Deje un comentario aquí" id="observacionesTranscripcion"
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="observaciones"
         style="height: 100px"></textarea>
     </div>
 
@@ -383,8 +383,8 @@
   <div class="row">
  
     <div class="col">
-      <label for="motivoConsulta">Cabeza</label>
-      <textarea class="form-control" placeholder="Deje un comentario aquí" id="cabeza"
+      <label for="motivoConsulta">Mamas</label>
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="mamas"
         style="height: 100px"></textarea>
     </div>
     <div class="col">
@@ -398,7 +398,7 @@
         style="height: 100px"></textarea>
     </div>
     <div class="col">
-      <label for="motivoConsulta">Osteo muscular</label>
+      <label for="motivoConsulta">Osteomuscular</label>
       <textarea class="form-control" placeholder="Deje un comentario aquí" id="osteomuscular"
         style="height: 100px"></textarea>
     </div>    
@@ -504,7 +504,7 @@
     </div>
     <div class="col">
       <label for="motivoConsulta">Cardio pulmonar</label>
-      <textarea class="form-control" placeholder="Deje un comentario aquí" id="cardiopulmonar"
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="cardiopulmonar2"
         style="height: 100px"></textarea>
     </div>
     <div class="col">
@@ -528,17 +528,17 @@
    </div>
    <div class="col">
      <label for="motivoConsulta">Osteomuscular</label>
-     <textarea class="form-control" placeholder="Deje un comentario aquí" id="Osteomuscular"
+     <textarea class="form-control" placeholder="Deje un comentario aquí" id="osteomuscular2"
        style="height: 100px"></textarea>
    </div>
    <div class="col">
      <label for="motivoConsulta">Neurológico</label>
-     <textarea class="form-control" placeholder="Deje un comentario aquí" id="neurologico"
+     <textarea class="form-control" placeholder="Deje un comentario aquí" id="neurologico2"
        style="height: 100px"></textarea>
    </div>
    <div class="col">
      <label for="motivoConsulta">Vascular periferico</label>
-     <textarea class="form-control" placeholder="Deje un comentario aquí" id="vascularperiferico"
+     <textarea class="form-control" placeholder="Deje un comentario aquí" id="vascularperiferico2"
        style="height: 100px"></textarea>
    </div>  
 </div>

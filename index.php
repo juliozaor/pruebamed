@@ -63,12 +63,17 @@
   </script>
   <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
   
-  <script src="scripts/audio.js"></script>
-<script src="scripts/procesarAudio.js"></script>
-<script>
-  $(function () {
-    new Choices(document.querySelector(".choices-single"));
-  });
-</script>
+  <script>
+    $(function () {
+      new Choices(document.querySelector(".choices-single"));
+      new Choices(document.querySelector(".choices-single2"));
+      new Choices(document.querySelector(".choices-single3"));
+      new Choices(document.querySelector(".choices-single4"));
+      new Choices(document.querySelector(".choices-single5"));
+    });
+  </script>
+  <script defer src="scripts/audio.js"></script>
+  <script defer src="scripts/elementos.js"></script>
+<script defer src="scripts/procesarAudio.js"></script>
 </body>
 </html>
