@@ -48,5 +48,9 @@
 <script>
   $(function () {
     new Choices(document.querySelector(".choices-single"));
+    new Choices(document.querySelector(".choices-single2"));
+    new Choices(document.querySelector(".choices-single3"));
+    new Choices(document.querySelector(".choices-single4"));
+    new Choices(document.querySelector(".choices-single5"));
   });
 </script>
