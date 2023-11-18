@@ -14,12 +14,12 @@
     <label for="anamnesis" class="form-label"><strong>Anamnesis</strong></label>
     <div class="col">
       <label for="motivoConsulta">MOTIVO DE CONSULTA</label>
-      <textarea class="form-control" placeholder="Leave a comment here" id="motivoConsulta"
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="motivoConsulta"
         style="height: 100px"></textarea>
     </div>
     <div class="col">
       <label for="motivoConsultaTranscripcion">ENFERMEDAD ACTUAL</label>
-      <textarea class="form-control" placeholder="Leave a comment here" id="motivoConsultaTranscripcion"
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="motivoConsultaTranscripcion"
         style="height: 100px"></textarea>
     </div>
   </div>
@@ -31,12 +31,12 @@
     </label>
     <div class="col">
       <label for="motivoConsulta">¿SUFRE DE ALGUNA ENFERMEDAD?</label>
-      <textarea class="form-control" placeholder="Leave a comment here" id="patologicos"
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="patologicos"
         style="height: 100px"></textarea>
     </div>
     <div class="col">
       <label for="motivoConsultaTranscripcion">PATOLOGICOS</label>
-      <textarea class="form-control" placeholder="Leave a comment here" id="patologicosTranscripcion"
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="patologicosTranscripcion"
         style="height: 100px"></textarea>
     </div>
   </div>
@@ -44,12 +44,12 @@
   <div class="row">
     <div class="col">
       <label for="motivoConsulta">¿SE HA FRACTURADO O HA SUFRIDO ALGÚN GOLPE FUERTE?</label>
-      <textarea class="form-control" placeholder="Leave a comment here" id="traumaticos"
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="traumaticos"
         style="height: 100px"></textarea>
     </div>
     <div class="col">
       <label for="motivoConsultaTranscripcion">TRAUMATICOS</label>
-      <textarea class="form-control" placeholder="Leave a comment here" id="traumaticosTranscripcion"
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="traumaticosTranscripcion"
         style="height: 100px"></textarea>
     </div>
   </div>
@@ -57,12 +57,12 @@
   <div class="row">
     <div class="col">
       <label for="motivoConsulta">¿ALGUNA VEZ HA TENIDO UNA OPERACIÓN O CIRUGÍA?</label>
-      <textarea class="form-control" placeholder="Leave a comment here" id="quirurgicos"
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="quirurgicos"
         style="height: 100px"></textarea>
     </div>
     <div class="col">
       <label for="motivoConsultaTranscripcion">QUIRURGICOS</label>
-      <textarea class="form-control" placeholder="Leave a comment here" id="quirurgicosTranscripcion"
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="quirurgicosTranscripcion"
         style="height: 100px"></textarea>
     </div>
   </div>
@@ -70,11 +70,11 @@
   <div class="row">
     <div class="col">
       <label for="motivoConsulta">¿ES ALÉRGICO A ALGÚN MEDICAMENTO?</label>
-      <textarea class="form-control" placeholder="Leave a comment here" id="alergicos" style="height: 100px"></textarea>
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="alergicos" style="height: 100px"></textarea>
     </div>
     <div class="col">
       <label for="motivoConsultaTranscripcion">ALERGICOS</label>
-      <textarea class="form-control" placeholder="Leave a comment here" id="alergicosTranscripcion"
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="alergicosTranscripcion"
         style="height: 100px"></textarea>
     </div>
   </div>
@@ -82,12 +82,12 @@
   <div class="row">
     <div class="col">
       <label for="motivoConsulta">¿ALGUNA VEZ SE HA INTOXICADO (CON ALGÚN MEDICAMENTO COMIDA O SUSTANCIA)?</label>
-      <textarea class="form-control" placeholder="Leave a comment here" id="toxicologicos"
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="toxicologicos"
         style="height: 100px"></textarea>
     </div>
     <div class="col">
       <label for="motivoConsultaTranscripcion">TOXICOLOGICOS</label>
-      <textarea class="form-control" placeholder="Leave a comment here" id="toxicologicosTranscripcion"
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="toxicologicosTranscripcion"
         style="height: 100px"></textarea>
     </div>
   </div>
@@ -95,12 +95,12 @@
   <div class="row">
     <div class="col">
       <label for="motivoConsulta">¿*** CONSUME ALGÚN FARMACO ***?</label>
-      <textarea class="form-control" placeholder="Leave a comment here" id="farmacologicos"
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="farmacologicos"
         style="height: 100px"></textarea>
     </div>
     <div class="col">
       <label for="motivoConsultaTranscripcion">FARMACOLOGICOS</label>
-      <textarea class="form-control" placeholder="Leave a comment here" id="farmacologicosTranscripcion"
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="farmacologicosTranscripcion"
         style="height: 100px"></textarea>
     </div>
   </div>
@@ -108,12 +108,12 @@
   <div class="row">
     <div class="col">
       <label for="motivoConsulta">¿*** TIENE ALGUNA ENFERMADAD DEL SISTEMA INMUNE***?</label>
-      <textarea class="form-control" placeholder="Leave a comment here" id="inmunologicos"
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="inmunologicos"
         style="height: 100px"></textarea>
     </div>
     <div class="col">
       <label for="motivoConsultaTranscripcion">INMUNOLOGICOS</label>
-      <textarea class="form-control" placeholder="Leave a comment here" id="inmunologicosTranscripcion"
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="inmunologicosTranscripcion"
         style="height: 100px"></textarea>
     </div>
   </div>
@@ -121,12 +121,12 @@
   <div class="row">
     <div class="col">
       <label for="motivoConsulta">¿*** TIENE ALGUNA ENFERMADAD OCUPACIONAL***?</label>
-      <textarea class="form-control" placeholder="Leave a comment here" id="ocupacional"
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="ocupacional"
         style="height: 100px"></textarea>
     </div>
     <div class="col">
       <label for="motivoConsultaTranscripcion">OCUPACIONAL</label>
-      <textarea class="form-control" placeholder="Leave a comment here" id="ocupacionalTranscripcion"
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="ocupacionalTranscripcion"
         style="height: 100px"></textarea>
     </div>
   </div>
@@ -244,7 +244,7 @@
     </div>
     <div class="col-6">
       <label for="motivoConsulta">Observaciones</label>
-      <textarea class="form-control" placeholder="Leave a comment here" id="observacionesTranscripcion"
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="observacionesTranscripcion"
         style="height: 100px"></textarea>
     </div>
 
@@ -290,13 +290,13 @@
 
     <div class="col-3">
       <label for="motivoConsulta">¿*** Tiene otros antecedentes***?</label>
-      <textarea class="form-control" placeholder="Leave a comment here" id="otrosantecedentes"
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="otrosantecedentes"
         style="height: 100px"></textarea>
     </div>
 
     <div class="col-3">
       <label for="motivoConsulta">Otros antecedentes</label>
-      <textarea class="form-control" placeholder="Leave a comment here" id="otrosantecedentesTranscripcion"
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="otrosantecedentesTranscripcion"
         style="height: 100px"></textarea>
     </div>
 
@@ -307,12 +307,12 @@
   <label for="anamnesis" class="form-label"><strong>Antecedentes familiares</strong></label>
     <div class="col">
       <label for="motivoConsulta">¿ANTECEDENTES DE LA MADRE?</label>
-      <textarea class="form-control" placeholder="Leave a comment here" id="antecedentesmadre"
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="antecedentesmadre"
         style="height: 100px"></textarea>
     </div>
     <div class="col">
       <label for="antecedentesmadreTranscripcion">MADRE</label>
-      <textarea class="form-control" placeholder="Leave a comment here" id="antecedentesmadreTranscripcion"
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="antecedentesmadreTranscripcion"
         style="height: 100px"></textarea>
     </div>
   </div>
@@ -320,12 +320,12 @@
   <div class="row">
     <div class="col">
       <label for="motivoConsulta">¿ANTECEDENTES DEL PADRE?</label>
-      <textarea class="form-control" placeholder="Leave a comment here" id="antecedentespadre"
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="antecedentespadre"
         style="height: 100px"></textarea>
     </div>
     <div class="col">
       <label for="antecedentespadreTranscripcion">PADRE</label>
-      <textarea class="form-control" placeholder="Leave a comment here" id="antecedentespadreTranscripcion"
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="antecedentespadreTranscripcion"
         style="height: 100px"></textarea>
     </div>
   </div>
@@ -333,12 +333,12 @@
   <div class="row">
     <div class="col">
       <label for="motivoConsulta">¿ANTECEDENTES DE HERMANOS?</label>
-      <textarea class="form-control" placeholder="Leave a comment here" id="antecedenteshermanos"
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="antecedenteshermanos"
         style="height: 100px"></textarea>
     </div>
     <div class="col">
       <label for="antecedenteshermanosTranscripcion"> HERMANOS</label>
-      <textarea class="form-control" placeholder="Leave a comment here" id="antecedenteshermanosTranscripcion"
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="antecedenteshermanosTranscripcion"
         style="height: 100px"></textarea>
     </div>
   </div>
@@ -346,14 +346,256 @@
   <div class="row">
     <div class="col">
       <label for="motivoConsulta">¿ANTECEDENTES OTROS?</label>
-      <textarea class="form-control" placeholder="Leave a comment here" id="antecedentesotros"
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="antecedentesotros"
         style="height: 100px"></textarea>
     </div>
     <div class="col">
       <label for="antecedenteshermanosTranscripcion"> OTROS</label>
-      <textarea class="form-control" placeholder="Leave a comment here" id="antecedentesotrosTranscripcion"
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="antecedentesotrosTranscripcion"
         style="height: 100px"></textarea>
     </div>
   </div>
+
+  <div class="row">
+  <label for="anamnesis" class="form-label"><strong>Revisión por sistemas </strong></label>
+    <div class="col">
+      <label for="motivoConsulta">Cabeza</label>
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="cabeza"
+        style="height: 100px"></textarea>
+    </div>
+    <div class="col">
+      <label for="motivoConsulta">Organos de los sentidos</label>
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="organossentidos"
+        style="height: 100px"></textarea>
+    </div>
+    <div class="col">
+      <label for="motivoConsulta">Cuello</label>
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="cuello"
+        style="height: 100px"></textarea>
+    </div>
+    <div class="col">
+      <label for="motivoConsulta">Cardio pulmonar</label>
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="cardiopulmonar"
+        style="height: 100px"></textarea>
+    </div>    
+  </div>
+
+  <div class="row">
+ 
+    <div class="col">
+      <label for="motivoConsulta">Cabeza</label>
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="cabeza"
+        style="height: 100px"></textarea>
+    </div>
+    <div class="col">
+      <label for="motivoConsulta">Gastro intestinal</label>
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="gastrointestinal"
+        style="height: 100px"></textarea>
+    </div>
+    <div class="col">
+      <label for="motivoConsulta">Gastro unirario</label>
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="gastrourinario"
+        style="height: 100px"></textarea>
+    </div>
+    <div class="col">
+      <label for="motivoConsulta">Osteo muscular</label>
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="osteomuscular"
+        style="height: 100px"></textarea>
+    </div>    
+  </div>
+
+  <div class="row">
+ 
+    <div class="col-6">
+      <label for="motivoConsulta">Neurologico</label>
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="neurologico"
+        style="height: 100px"></textarea>
+    </div>
+    <div class="col-3">
+      <label for="motivoConsulta">Vascular perifierico</label>
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="vascularperiferico"
+        style="height: 100px"></textarea>
+    </div>
+    <div class="col-3">
+      <label for="motivoConsulta">Piel y faneras</label>
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="pielfaneras"
+        style="height: 100px"></textarea>
+    </div>
+       
+  </div>
+
+  <div class="row">
+    <label for="anamnesis" class="form-label"><strong>Examen Fisico</strong></label>
+    <label for="anamnesis" class="form-label">
+      <h6>Signos Vitales</h6>
+    </label>
+    <div class="col">
+      <label for="motivoConsulta">Presión arterial sistólica mmhg</label>
+      <input type="text" id="presionartsis" class="form-control" placeholder="Presión arterial sistólica mmhg"
+        aria-label="Presión arterial sistólica mmhg">
+    </div>
+    <div class="col">
+      <label for="motivoConsulta">Presión arterial diastólica mmhg</label>
+      <input type="text" id="presionartdia" class="form-control" placeholder="Presión arterial diastólica mmhg"
+        aria-label="Presión arterial diastólica mmhg">
+    </div>
+    <div class="col">
+      <label for="motivoConsulta">Frecuencia cardiaca /min</label>
+      <input type="text" id="frecuenciacardiaca" class="form-control" placeholder="Frecuencia cardiaca /min"
+        aria-label="Frecuencia cardiaca /min">
+    </div>
+    <div class="col">
+      <label for="motivoConsulta">Frecuencia respiratorio /min</label>
+      <input type="text" id="frecuenciarespiratoria" class="form-control" placeholder="Frecuencia respiratorio /min"
+        aria-label="Frecuencia respiratorio /min">
+    </div>  
+</div>
+<div class="row">
+    <div class="col">
+      <label for="motivoConsulta">Temperatura corporal °C</label>
+      <input type="text" id="temperaturacorporal" class="form-control" placeholder="Temperatura corporal °C"
+        aria-label="Temperatura corporal °C">
+    </div>
+    <div class="col">
+      <label for="motivoConsulta">Peso Kg</label>
+      <input type="text" id="pesokg" class="form-control" placeholder="Peso Kg"
+        aria-label="Peso Kg">
+    </div>
+    <div class="col">
+      <label for="motivoConsulta">Talla Mtrs</label>
+      <input type="text" id="frecuenciacardiaca" class="form-control" placeholder="Talla Mtrs"
+        aria-label="Talla Mtrs">
+    </div>
+    <div class="col">
+      <label for="motivoConsulta">IMC</label>
+      <input type="text" id="imc" class="form-control" placeholder="IMC"
+        aria-label="IMC">
+    </div>  
+</div>
+
+<div class="row">
+<label for="anamnesis" class="form-label">
+      <h6>Exploración física</h6>
+    </label>
+    <div class="col-6">
+      <label for="motivoConsulta">Estado general</label>
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="estadogeneral"
+        style="height: 100px"></textarea>
+    </div>
+    <div class="col-3">
+      <label for="motivoConsulta">Cabeza</label>
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="cabeza2"
+        style="height: 100px"></textarea>
+    </div>
+    <div class="col-3">
+      <label for="motivoConsulta">Organos de los sentidos</label>
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="organossentidos2"
+        style="height: 100px"></textarea>
+    </div>
+       
+  </div>
+
+  <div class="row">
+   
+    <div class="col">
+      <label for="motivoConsulta">Cuello2</label>
+       <textarea class="form-control" placeholder="Deje un comentario aquí" id="cuello2"
+        style="height: 100px"></textarea>
+    </div>
+    <div class="col">
+      <label for="motivoConsulta">Cardio pulmonar</label>
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="cardiopulmonar"
+        style="height: 100px"></textarea>
+    </div>
+    <div class="col">
+      <label for="motivoConsulta">Torax / mamas</label>
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="toraxmamas"
+        style="height: 100px"></textarea>
+    </div>
+    <div class="col">
+      <label for="motivoConsulta">Abdomen</label>
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="abdomen"
+        style="height: 100px"></textarea>
+    </div>  
+</div>
+
+<div class="row">
+   
+   <div class="col">
+     <label for="motivoConsulta">Genitourinario</label>
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="genitourinario"
+       style="height: 100px"></textarea>
+   </div>
+   <div class="col">
+     <label for="motivoConsulta">Osteomuscular</label>
+     <textarea class="form-control" placeholder="Deje un comentario aquí" id="Osteomuscular"
+       style="height: 100px"></textarea>
+   </div>
+   <div class="col">
+     <label for="motivoConsulta">Neurológico</label>
+     <textarea class="form-control" placeholder="Deje un comentario aquí" id="neurologico"
+       style="height: 100px"></textarea>
+   </div>
+   <div class="col">
+     <label for="motivoConsulta">Vascular periferico</label>
+     <textarea class="form-control" placeholder="Deje un comentario aquí" id="vascularperiferico"
+       style="height: 100px"></textarea>
+   </div>  
+</div>
+
+<div class="row">
+   
+   <div class="col">
+     <label for="motivoConsulta">Piel y faneras</label>
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="pielfaneras2"
+       style="height: 100px"></textarea>
+   </div>
+   <div class="col">
+     <label for="motivoConsulta">Otros Hallazgos</label>
+     <textarea class="form-control" placeholder="Deje un comentario aquí" id="otroshallazgos"
+       style="height: 100px"></textarea>
+   </div>
+  
+</div>
+
+<div class="row">
+<label for="anamnesis" class="form-label">
+      <h6>Intervenciones</h6>
+    </label>
+   <div class="col">
+     <label for="motivoConsulta">Análisis y plan de manejo</label>
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="analisisplanmanejo"
+       style="height: 100px"></textarea>
+   </div>
+   <div class="col">
+     <label for="motivoConsulta">Recomendaciones</label>
+     <textarea class="form-control" placeholder="Deje un comentario aquí" id="recomendaciones"
+       style="height: 100px"></textarea>
+   </div>
+  
+</div>
+
+
+
+<div class="row">
+<div class="col-6">
+      <label for="motivoConsulta">¿Remitido?</label>
+      <select class="form-control choices-single6">
+        <option value="Si">Si</option>
+        <option value="No" selected>No</option>
+      </select>
+    </div>
+   <div class="col-3">
+     <label for="motivoConsulta">Motivo de remisión</label>
+      <textarea class="form-control" placeholder="Deje un comentario aquí" id="motivoremision"
+       style="height: 100px"></textarea>
+   </div>
+   <div class="col-3">
+     <label for="motivoConsulta">Especialidad</label>
+     <textarea class="form-control" placeholder="Deje un comentario aquí" id="especialidad"
+       style="height: 100px"></textarea>
+   </div>
+  
+</div>
 
 </form>

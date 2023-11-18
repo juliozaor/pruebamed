@@ -52,5 +52,6 @@
     new Choices(document.querySelector(".choices-single3"));
     new Choices(document.querySelector(".choices-single4"));
     new Choices(document.querySelector(".choices-single5"));
+    new Choices(document.querySelector(".choices-single6"));
   });
 </script>
