@@ -47,7 +47,6 @@
 
 <script>
   $(function () {
-    $('select').selectpicker();
-    console.log('hola')
+    new Choices(document.querySelector(".choices-single"));
   });
 </script>
