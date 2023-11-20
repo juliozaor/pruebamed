@@ -1,5 +1,7 @@
+
+
 const urlChatGpt = 'https://api.openai.com/v1/chat/completions';
-const tokenChatGpt = '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';
+const tokenChatGpt = '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';
 
 const btnStart = document.getElementById('btnStart');
 const btnStop = document.getElementById('btnStop');
@@ -44,43 +46,53 @@ recognition.onresult = (event) => {
 
 //Enviar a Chat GPT
 function enviarChatGpt(texto, campo) {
-    console.log("entro a chat", texto, campo);
+    const responder2 = document.getElementById(campo);
     if (texto !== '') {
-        const contexto = {
-            "model": "gpt-3.5-turbo",
-            "messages": [
-                { "role": "system", "content": "Eres un experto en terminologia medica usando la semiología de suros" },
-                { "role": "user", "content": `por favor traduce los síntomas que te paso a continuación usando terminología medica y semiología de suros, sin encabezado y redactando el texto continuo sin expliación: ${texto}` }],
-            "temperature": 0.7
-        };
+        if (texto.includes('no') || texto.includes('no refiere') || texto.includes('ninguna') || texto.includes('ninguno')) {
+            responder2.value = 'NO REFIERE POR DEFECTO';
+        } else {
+            const contexto = {
+                "model": "gpt-3.5-turbo",
+                "messages": [
+                    { "role": "system", "content": "Eres un experto en terminologia medica usando la semiología de suros" },
+                    { "role": "user", "content": `por favor traduce los síntomas que te paso a continuación usando terminología medica y semiología de suros, sin encabezado y redactando el texto continuo sin expliación: ${texto}` }],
+                "temperature": 0.7
+            };
 
-        fetch(urlChatGpt, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': 'Bearer ' + tokenChatGpt
-            },
-            body: JSON.stringify(contexto)
-        })
-            .then(function (response) {                
-                console.log("entro a validar respuesta", texto, campo);
-                if (!response.ok) {
-                    throw new Error('La respuesta de la API no fue correcta 0');
-                }
-                return response.json();
+            fetch(urlChatGpt, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': 'Bearer ' + tokenChatGpt
+                },
+                body: JSON.stringify(contexto)
             })
-            .then(function (data) {
-                // Procesar los datos de respuesta de la API aquí
+                .then(function (response) {
+                    console.log("entro a validar respuesta", texto, campo);
+                    if (!response.ok) {
+                        throw new Error('La respuesta de la API no fue correcta 0');
+                    }
+                    return response.json();
+                })
+                .then(function (data) {
+                    // Procesar los datos de respuesta de la API aquí
 
-                if (!data.choices[0]) {
-                    throw new Error('La respuesta de la API no fue correcta 1');
+                    if (!data.choices[0]) {
+                        throw new Error('La respuesta de la API no fue correcta 1');
 
-                }
-                const respuesta = data.choices[0].message.content;
-                console.log(respuesta);
-                const responder2 = document.getElementById(campo);
-                responder2.value = respuesta; // respuesta chatGpt
-            })
+                    }
+                    const respuesta = data.choices[0].message.content;
+                    console.log(respuesta);
 
+                    responder2.value = respuesta; // respuesta chatGpt
+                })
+        }
+    }
+}
+
+function pasarTexto(texto, campo) {
+    const responder2 = document.getElementById(campo);
+    if (texto !== '') {
+        responder2.value = texto;
     }
 }
